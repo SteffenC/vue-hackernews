@@ -45,7 +45,7 @@ const getTopStories = async (): Promise<HttpResponse<NewsStory[]>> => {
     );
 
     return new HttpResponse(status, result);
-  } catch (error: any | AxiosError) {
+  } catch (error: any) {
     return new HttpResponse(error.response.status, []);
   }
 };
@@ -58,7 +58,7 @@ const getAuthor = async (username: string): Promise<HttpResponse<Author>> => {
       config
     );
     return new HttpResponse(status, data);
-  } catch (error: any | AxiosError) {
+  } catch (error: any) {
     return new HttpResponse(error.response.status, new Author());
   }
 };
