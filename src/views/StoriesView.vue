@@ -1,6 +1,6 @@
 <template>
   <div class="storiesview">
-    <div class="storiesviewheader">
+    <div>
       <h1>Top News</h1>
       <input placeholder="Search by title, url or author" />
       <ButtonGroup />

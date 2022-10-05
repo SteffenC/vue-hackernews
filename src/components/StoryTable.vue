@@ -20,13 +20,8 @@
           }}</a>
         </td>
         <td>
-          <img
-            :src="
-              'https://avatars.dicebear.com/api/male/' +
-              story.id +
-              '.svg?mood[]=happy'
-            "
-          /><AuthorTag :name="story.by" />
+            <img :src=" 'https://avatars.dicebear.com/api/male/' + story.id + '.svg?mood[]=happy' "/>
+            <AuthorTag :name="story.by" />
         </td>
         <td>{{ formatDate(story.time) }} at {{ formatTime(story.time) }}</td>
       </tr>

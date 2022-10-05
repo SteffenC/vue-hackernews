@@ -17,7 +17,7 @@ $breakpoint-tablet: 1180px;
 }
 
 body {
-  background-color: #000;
+  background-color: #111;
 }
 
 .routerview {
@@ -53,7 +53,7 @@ body {
     background-color: $brand-primary;
     margin-bottom: 25px;
     border: none;
-    width: 98%;
+    width: 100%;
     padding: 18px;
     font-size: 18px;
     border-radius: 5px;
@@ -62,6 +62,7 @@ body {
 
   input:focus {
     opacity: 100%;
+    outline: none;
   }
 
   h1 {
@@ -110,14 +111,41 @@ body {
 
   td {
     display: none;
+    background-color: #000;
+  }
+
+  td:nth-of-type(1) {
+    display: table-cell;
   }
 
   td:nth-of-type(2) {
     display: table-cell;
   }
 
-  td:nth-of-type(3) {
-    display: table-cell;
+  td:nth-of-type(4) {
+    display: none !important;
+  }
+
+  .buttongroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 18px;
+    
+
+    .buttongroupwrapper {
+      background-color: #000;
+      border-radius: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-bottom: 18px;
+    }
+
+    button {
+      border-radius: 0px;;
+    }
+
   }
 }
 
@@ -135,9 +163,8 @@ th {
   background-color: $brand-primary;
 }
 
-
 td {
-  
+
   opacity: 55%;
   padding: 25px;
   margin: 0px;
@@ -222,7 +249,7 @@ td:nth-of-type(4) {
     box-shadow: 0px 3px 6px rgba(49, 207, 70, 0.65);
   }
 
-  
+
 
 
 }
@@ -263,7 +290,7 @@ td:nth-of-type(4) {
     color: #ffffff;
   }
 
-  
+
 
   p {
     font-size: 15px;
