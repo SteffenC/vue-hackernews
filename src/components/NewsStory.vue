@@ -25,10 +25,7 @@
         </div>
 
         <a :href="story.url">
-          <div v-if="story.url" class="newsstoryactionread">
-            {{ "Read Story" }}
-            <p style="font-size: 18px; padding-left: 10px">›</p>
-          </div>
+          
         </a>
       </div>
     </div>
