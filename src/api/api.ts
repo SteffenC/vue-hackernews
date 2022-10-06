@@ -3,7 +3,7 @@ import { HttpResponse } from "@/models/httpResponse";
 import type { NewsStory } from "@/models/newsStory";
 import axios from "axios";
 
-const baseUrl = "https://hacker-news.firebaseio.com/v0";
+const baseUrl = import.meta.env.VITE_BASE_URL;
 const getAxiosConfig = async (
   responseType: string = "json"
 ): Promise<Object> => {
